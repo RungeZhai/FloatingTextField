@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1976CAF11BAE909600D99E46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1976CAF01BAE909600D99E46 /* main.m */; };
+		1976CAF41BAE909600D99E46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1976CAF31BAE909600D99E46 /* AppDelegate.m */; };
+		1976CAF71BAE909600D99E46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1976CAF61BAE909600D99E46 /* ViewController.m */; };
+		1976CAFA1BAE909600D99E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1976CAF81BAE909600D99E46 /* Main.storyboard */; };
+		1976CAFC1BAE909600D99E46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1976CAFB1BAE909600D99E46 /* Images.xcassets */; };
+		1976CAFF1BAE909600D99E46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1976CAFD1BAE909600D99E46 /* LaunchScreen.xib */; };
+		1976CB0B1BAE909700D99E46 /* FloatingTextFieldDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1976CB0A1BAE909700D99E46 /* FloatingTextFieldDemoTests.m */; };
+		1976CB171BAE90E100D99E46 /* FloatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1976CB161BAE90E100D99E46 /* FloatingTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1976CB051BAE909700D99E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1976CAE31BAE909600D99E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1976CAEA1BAE909600D99E46;
+			remoteInfo = FloatingTextFieldDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1976CAEB1BAE909600D99E46 /* FloatingTextFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingTextFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1976CAEF1BAE909600D99E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1976CAF01BAE909600D99E46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1976CAF21BAE909600D99E46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1976CAF31BAE909600D99E46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1976CAF51BAE909600D99E46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1976CAF61BAE909600D99E46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1976CAF91BAE909600D99E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1976CAFB1BAE909600D99E46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1976CAFE1BAE909600D99E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1976CB041BAE909700D99E46 /* FloatingTextFieldDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingTextFieldDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1976CB091BAE909700D99E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1976CB0A1BAE909700D99E46 /* FloatingTextFieldDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingTextFieldDemoTests.m; sourceTree = "<group>"; };
+		1976CB151BAE90E100D99E46 /* FloatingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatingTextField.h; sourceTree = "<group>"; };
+		1976CB161BAE90E100D99E46 /* FloatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatingTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1976CAE81BAE909600D99E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1976CB011BAE909700D99E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1976CAE21BAE909600D99E46 = {
+			isa = PBXGroup;
+			children = (
+				1976CAED1BAE909600D99E46 /* FloatingTextFieldDemo */,
+				1976CB071BAE909700D99E46 /* FloatingTextFieldDemoTests */,
+				1976CAEC1BAE909600D99E46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1976CAEC1BAE909600D99E46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1976CAEB1BAE909600D99E46 /* FloatingTextFieldDemo.app */,
+				1976CB041BAE909700D99E46 /* FloatingTextFieldDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1976CAED1BAE909600D99E46 /* FloatingTextFieldDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1976CB141BAE909F00D99E46 /* FloatingTextField */,
+				1976CAF21BAE909600D99E46 /* AppDelegate.h */,
+				1976CAF31BAE909600D99E46 /* AppDelegate.m */,
+				1976CAF51BAE909600D99E46 /* ViewController.h */,
+				1976CAF61BAE909600D99E46 /* ViewController.m */,
+				1976CAF81BAE909600D99E46 /* Main.storyboard */,
+				1976CAFB1BAE909600D99E46 /* Images.xcassets */,
+				1976CAFD1BAE909600D99E46 /* LaunchScreen.xib */,
+				1976CAEE1BAE909600D99E46 /* Supporting Files */,
+			);
+			path = FloatingTextFieldDemo;
+			sourceTree = "<group>";
+		};
+		1976CAEE1BAE909600D99E46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1976CAEF1BAE909600D99E46 /* Info.plist */,
+				1976CAF01BAE909600D99E46 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1976CB071BAE909700D99E46 /* FloatingTextFieldDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1976CB0A1BAE909700D99E46 /* FloatingTextFieldDemoTests.m */,
+				1976CB081BAE909700D99E46 /* Supporting Files */,
+			);
+			path = FloatingTextFieldDemoTests;
+			sourceTree = "<group>";
+		};
+		1976CB081BAE909700D99E46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1976CB091BAE909700D99E46 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1976CB141BAE909F00D99E46 /* FloatingTextField */ = {
+			isa = PBXGroup;
+			children = (
+				1976CB151BAE90E100D99E46 /* FloatingTextField.h */,
+				1976CB161BAE90E100D99E46 /* FloatingTextField.m */,
+			);
+			name = FloatingTextField;
+			path = ../FloatingTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1976CAEA1BAE909600D99E46 /* FloatingTextFieldDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1976CB0E1BAE909700D99E46 /* Build configuration list for PBXNativeTarget "FloatingTextFieldDemo" */;
+			buildPhases = (
+				1976CAE71BAE909600D99E46 /* Sources */,
+				1976CAE81BAE909600D99E46 /* Frameworks */,
+				1976CAE91BAE909600D99E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloatingTextFieldDemo;
+			productName = FloatingTextFieldDemo;
+			productReference = 1976CAEB1BAE909600D99E46 /* FloatingTextFieldDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1976CB031BAE909700D99E46 /* FloatingTextFieldDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1976CB111BAE909700D99E46 /* Build configuration list for PBXNativeTarget "FloatingTextFieldDemoTests" */;
+			buildPhases = (
+				1976CB001BAE909700D99E46 /* Sources */,
+				1976CB011BAE909700D99E46 /* Frameworks */,
+				1976CB021BAE909700D99E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1976CB061BAE909700D99E46 /* PBXTargetDependency */,
+			);
+			name = FloatingTextFieldDemoTests;
+			productName = FloatingTextFieldDemoTests;
+			productReference = 1976CB041BAE909700D99E46 /* FloatingTextFieldDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1976CAE31BAE909600D99E46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ZiXuWuYou;
+				TargetAttributes = {
+					1976CAEA1BAE909600D99E46 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					1976CB031BAE909700D99E46 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 1976CAEA1BAE909600D99E46;
+					};
+				};
+			};
+			buildConfigurationList = 1976CAE61BAE909600D99E46 /* Build configuration list for PBXProject "FloatingTextFieldDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1976CAE21BAE909600D99E46;
+			productRefGroup = 1976CAEC1BAE909600D99E46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1976CAEA1BAE909600D99E46 /* FloatingTextFieldDemo */,
+				1976CB031BAE909700D99E46 /* FloatingTextFieldDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1976CAE91BAE909600D99E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1976CAFA1BAE909600D99E46 /* Main.storyboard in Resources */,
+				1976CAFF1BAE909600D99E46 /* LaunchScreen.xib in Resources */,
+				1976CAFC1BAE909600D99E46 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1976CB021BAE909700D99E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1976CAE71BAE909600D99E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1976CAF71BAE909600D99E46 /* ViewController.m in Sources */,
+				1976CAF41BAE909600D99E46 /* AppDelegate.m in Sources */,
+				1976CAF11BAE909600D99E46 /* main.m in Sources */,
+				1976CB171BAE90E100D99E46 /* FloatingTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1976CB001BAE909700D99E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1976CB0B1BAE909700D99E46 /* FloatingTextFieldDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1976CB061BAE909700D99E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1976CAEA1BAE909600D99E46 /* FloatingTextFieldDemo */;
+			targetProxy = 1976CB051BAE909700D99E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1976CAF81BAE909600D99E46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1976CAF91BAE909600D99E46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1976CAFD1BAE909600D99E46 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1976CAFE1BAE909600D99E46 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1976CB0C1BAE909700D99E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1976CB0D1BAE909700D99E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1976CB0F1BAE909700D99E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FloatingTextFieldDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1976CB101BAE909700D99E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FloatingTextFieldDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1976CB121BAE909700D99E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FloatingTextFieldDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloatingTextFieldDemo.app/FloatingTextFieldDemo";
+			};
+			name = Debug;
+		};
+		1976CB131BAE909700D99E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FloatingTextFieldDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FloatingTextFieldDemo.app/FloatingTextFieldDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1976CAE61BAE909600D99E46 /* Build configuration list for PBXProject "FloatingTextFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1976CB0C1BAE909700D99E46 /* Debug */,
+				1976CB0D1BAE909700D99E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1976CB0E1BAE909700D99E46 /* Build configuration list for PBXNativeTarget "FloatingTextFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1976CB0F1BAE909700D99E46 /* Debug */,
+				1976CB101BAE909700D99E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1976CB111BAE909700D99E46 /* Build configuration list for PBXNativeTarget "FloatingTextFieldDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1976CB121BAE909700D99E46 /* Debug */,
+				1976CB131BAE909700D99E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1976CAE31BAE909600D99E46 /* Project object */;
+}
