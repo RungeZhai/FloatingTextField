@@ -98,7 +98,7 @@ static CGFloat borderCornerRadius = 2;
     
     CGSize placeholderSize = [self sizeOfText:_placeholderLabel.text withFont:_placeholderLabel.font];
     CGFloat placeholderContentInsetsRight = _placeholderLabel.text.length ? _contentInsets.left : 0;
-    CGFloat placeholderContentInsetsLeft = _leftImageView.image ? 0 : _contentInsets.left;
+    CGFloat placeholderContentInsetsLeft = _leftImageView.image ? 0 : (placeholderContentInsetsRight);
     placeholderSize.width += placeholderContentInsetsLeft + placeholderContentInsetsRight;
     
     _leftImageView.frame = (CGRect){.origin = CGPointZero, .size = (CGSize){_leftImageView.image ? self.bounds.size.height : 0, self.bounds.size.height}};
