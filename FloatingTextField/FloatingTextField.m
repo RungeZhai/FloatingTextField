@@ -13,11 +13,11 @@ typedef enum : NSUInteger {
     FloatingTextFieldStateFloating
 } FloatingTextFieldState;
 
-static CGFloat scale = .7;  // floatingView's scale when floating up
+static CGFloat scale = .7;  // floatingView's shrink scale when floating up
 static NSTimeInterval animationDuration = .35;
 static CGFloat borderCornerRadius = 2;
 
-@interface FloatingTextField ()<UITextFieldDelegate> {
+@interface FloatingTextField () <UITextFieldDelegate> {
     UIEdgeInsets _contentInsets;
 }
 
@@ -92,13 +92,13 @@ static CGFloat borderCornerRadius = 2;
 
 - (void)adjustSubviews {
     
-    _contentInsets = (UIEdgeInsets){0, self.bounds.size.height / 5, 0, self.bounds.size.height / 5};
+    _contentInsets = (UIEdgeInsets){0, self.bounds.size.height / 6, 0, 0};
     
     _floatingView.transform = CGAffineTransformIdentity;
     
     CGSize placeholderSize = [self sizeOfText:_placeholderLabel.text withFont:_placeholderLabel.font];
-    CGFloat placeholderContentInsetsRight = _contentInsets.left;
-    CGFloat placeholderContentInsetsLeft = _leftImageView.image ? 0 : placeholderContentInsetsRight;
+    CGFloat placeholderContentInsetsRight = _placeholderLabel.text.length ? _contentInsets.left : 0;
+    CGFloat placeholderContentInsetsLeft = _leftImageView.image ? 0 : _contentInsets.left;
     placeholderSize.width += placeholderContentInsetsLeft + placeholderContentInsetsRight;
     
     _leftImageView.frame = (CGRect){.origin = CGPointZero, .size = (CGSize){_leftImageView.image ? self.bounds.size.height : 0, self.bounds.size.height}};
@@ -138,6 +138,7 @@ static CGFloat borderCornerRadius = 2;
     CGPoint endPointLeft = (CGPoint){startX + width / 2, 0};
     CGPoint endPointRight = endPointLeft;
     
+    NSString *timingFunc = kCAMediaTimingFunctionEaseIn;
     
     if (_currentState == FloatingTextFieldStateFloating) {
         transform = CGAffineTransformMake(scale, 0, 0, scale, startX + width / 2 - CGRectGetMidX(_floatingView.frame), -CGRectGetMidY(_floatingView.frame));
@@ -145,6 +146,7 @@ static CGFloat borderCornerRadius = 2;
         endPointLeft = (CGPoint){startX, 0};
         endPointRight = (CGPoint){startX + width, 0};
         
+        timingFunc = kCAMediaTimingFunctionEaseOut;
     }
     
     CGMutablePathRef path = CGPathCreateMutable();
@@ -160,23 +162,26 @@ static CGFloat borderCornerRadius = 2;
     CGPathAddArcToPoint(path, NULL, topRight.x, topRight.y, endPointRight.x, endPointRight.y, borderCornerRadius);
     CGPathAddLineToPoint(path, NULL, endPointRight.x, endPointRight.y);
     
-    [UIView animateWithDuration:animated ? animationDuration : 0
-                     animations:^{
-                         _floatingView.transform = transform;
-                     }];
-    
-    
     if (animated) {
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"path"];
         
         animation.duration = animationDuration;
         animation.fromValue = (id)_borderLayer.path;
         animation.toValue = (__bridge id)path;
+        animation.timingFunction = [CAMediaTimingFunction functionWithName:timingFunc];
         
         [_borderLayer addAnimation:animation forKey:@"path"];
+        
+        _borderLayer.path = path;
+        
+        [UIView animateWithDuration:animated ? animationDuration : 0
+                         animations:^{
+                             _floatingView.transform = transform;
+                         }];
+    } else {
+        _borderLayer.path = path;
+        _floatingView.transform = transform;
     }
-    
-    _borderLayer.path = path;
 }
 
 
