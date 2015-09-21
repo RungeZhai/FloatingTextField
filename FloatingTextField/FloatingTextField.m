@@ -182,6 +182,8 @@ static CGFloat borderCornerRadius = 2;
         _borderLayer.path = path;
         _floatingView.transform = transform;
     }
+    
+    CGPathRelease(path);
 }
 
 
